@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#070b16">
+<meta name="description" content="Tamanna Satsangi — Electrical Engineering, Computer Science, AI/ML and software projects.">
+<title>Tamanna Satsangi | Interactive Portfolio</title>
+<style>
+:root{--bg:#070b16;--panel:#0d1729;--panel2:#111e33;--text:#f4f7ff;--muted:#a8b7d1;--blue:#2584ff;--red:#ff3158;--line:#263956}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:radial-gradient(ellipse at 15% 0%,#10203b 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.65 Inter,Segoe UI,Arial,sans-serif}
+#progress{position:fixed;z-index:30;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--blue),#9a5bff,var(--red))}
+header{position:sticky;top:0;z-index:20;background:rgba(7,11,22,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(111,148,202,.18)}
+.nav{max-width:1120px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font:700 13px/1.2 ui-monospace,Consolas,monospace;letter-spacing:.12em;color:#dbe8ff;white-space:nowrap}
+.brand span{color:var(--blue)}
+nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+nav a,.toplink{color:var(--muted);text-decoration:none;font-size:13px;padding:8px 11px;border-radius:999px;border:1px solid transparent;transition:.2s}
+nav a:hover,nav a.active,.toplink:hover{color:white;border-color:#31598c;background:#10213b}
+main{max-width:1120px;margin:auto;padding:24px 22px 70px}
+.intro{display:flex;align-items:end;justify-content:space-between;gap:20px;padding:28px 2px 12px}
+.kicker{font:12px ui-monospace,Consolas,monospace;letter-spacing:.18em;color:#72aaff}
+h1{font-size:clamp(27px,4vw,42px);line-height:1.15;margin:8px 0;color:#f5f8ff}
+.intro p{margin:0;color:var(--muted);max-width:650px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border:1px solid #28466d;border-radius:999px;color:#cfe2ff;font-size:12px;white-space:nowrap}
+.dot{width:7px;height:7px;border-radius:50%;background:#35a0ff;box-shadow:0 0 12px #2584ff}
+.section{position:relative;margin:22px 0 28px;padding:16px;border:1px solid rgba(85,124,181,.27);border-radius:22px;background:linear-gradient(145deg,rgba(15,28,49,.94),rgba(8,15,29,.94));box-shadow:0 18px 50px rgba(0,0,0,.22);overflow:hidden;scroll-margin-top:90px}
+.section:before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue),#8d57ff,var(--red))}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 8px 14px}
+.section-head h2{font-size:14px;letter-spacing:.12em;text-transform:uppercase;margin:0;color:#8ebaff;font-family:ui-monospace,Consolas,monospace}
+.section-head span{color:#7186a8;font-size:12px}
+.art{width:100%;height:auto;display:block;border-radius:13px}
+.section img{transition:transform .35s ease,filter .35s ease}
+.section:hover img{filter:drop-shadow(0 8px 22px rgba(32,125,255,.08))}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.info-card{padding:18px;border:1px solid var(--line);border-radius:16px;background:rgba(15,29,50,.8)}
+.info-card h3{margin:0 0 9px;color:#9fc5ff;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.info-card p,.info-card li{color:#c2cde0;font-size:14px}
+.info-card ul{margin:8px 0 0;padding-left:19px}
+.project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.project{padding:18px;border-radius:16px;background:linear-gradient(145deg,#101f36,#0b1425);border:1px solid #263d5e;transition:transform .25s,border-color .25s}
+.project:hover{transform:translateY(-4px);border-color:#368dff}
+.project h3{margin:0 0 6px;font-size:17px}
+.project p{margin:0;color:#afbed5;font-size:14px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.tags span{font-size:11px;color:#b8d6ff;background:#142b4b;border:1px solid #284c79;padding:4px 8px;border-radius:999px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.cta a{display:inline-block;text-decoration:none;padding:10px 15px;border-radius:999px;background:#142b4b;border:1px solid #315c91;color:#e8f2ff;font-size:13px}
+.cta a.primary{background:linear-gradient(90deg,#176bdf,#a43d83);border:0}
+footer{text-align:center;color:#8293af;font-size:12px;padding:24px 10px 8px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+#top{position:fixed;right:20px;bottom:20px;z-index:15;width:42px;height:42px;border-radius:50%;border:1px solid #34557f;background:#10213b;color:#fff;font-size:20px;cursor:pointer;opacity:0;pointer-events:none;transition:.2s}
+#top.show{opacity:1;pointer-events:auto}
+@media(max-width:720px){.nav{align-items:flex-start;flex-direction:column}.nav nav{justify-content:flex-start}main{padding:16px 12px 50px}.intro{align-items:flex-start;flex-direction:column}.section{padding:10px;margin:16px 0 20px}.grid,.project-grid{grid-template-columns:1fr}.section-head{padding:7px 5px 11px}nav a{padding:6px 9px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<header>
+  <div class="nav">
+    <div class="brand">TAMANNA <span>/</span> PORTFOLIO</div>
+    <nav aria-label="Portfolio navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#stack">Tech Stack</a>
+      <a href="#projects">Projects</a>
+      <a href="#identity">Developer ID</a>
+      <a href="#connect">Connect</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="intro" id="home">
+    <div><div class="kicker">ELECTRICAL ENGINEERING · COMPUTER SCIENCE</div><h1>Ideas into intelligent solutions.</h1><p>A continuous, interactive portfolio — explore my work across AI/ML, software development, IoT, robotics and engineering.</p></div>
+    <div class="pill"><span class="dot"></span> Agra, India · DEI</div>
+  </div>
+
+  <section class="section reveal" aria-label="Introduction">
+    <div class="section-head"><h2>00 / Introduction</h2><span>Meet Tamanna</span></div>
+    <img class="art" src="assets/hero.svg" alt="Tamanna Satsangi — profile introduction">
+  </section>
+
+  <section class="section reveal" id="about">
+    <div class="section-head"><h2>01 / About & Focus</h2><span>Curious by design</span></div>
+    <img class="art" src="assets/about-life.svg" alt="About and areas of focus">
+    <div class="grid" style="margin-top:14px">
+      <div class="info-card"><h3>Education</h3><p><strong>B.Tech — Electrical Engineering</strong><br>Specialization in Computer Science<br>Dayalbagh Educational Institute, Agra<br>CGPA: 9.07 (through 4th semester)</p></div>
+      <div class="info-card"><h3>Areas I explore</h3><ul><li>AI, Machine Learning & Deep Learning</li><li>Web applications, APIs & workflow tools</li><li>IoT, embedded systems & robotics</li><li>Engineering design and problem-solving</li></ul></div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="stack">
+    <div class="section-head"><h2>02 / Technology Stack</h2><span>Tools I build with</span></div>
+    <img class="art" src="assets/stack.svg" alt="Technology stack">
+    <div class="grid" style="margin-top:14px">
+      <div class="info-card"><h3>Programming & Web</h3><p>Python · Java · C · JavaScript · HTML · CSS · Flask · REST APIs</p></div>
+      <div class="info-card"><h3>AI & Engineering</h3><p>Machine Learning · Deep Learning · Generative AI · IoT · Embedded Systems · Robotics</p></div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="projects">
+    <div class="section-head"><h2>03 / Featured Projects</h2><span>Selected engineering work</span></div>
+    <div class="project-grid">
+      <article class="project"><h3>RoadGuard AI</h3><p>AI-powered road damage detection and municipal reporting, including pothole/crack identification, severity estimation and GPS-based hazard mapping.</p><div class="tags"><span>YOLO</span><span>U-Net</span><span>FastAPI</span><span>React</span></div></article>
+      <article class="project"><h3>AgriSetu</h3><p>Intelligent agricultural cold-chain ecosystem with environmental monitoring, cold-storage workflows and ML-based spoilage-risk prediction.</p><div class="tags"><span>IoT</span><span>Machine Learning</span><span>Flask</span></div></article>
+      <article class="project"><h3>Vikas SmartFlow</h3><p>Smart workflow and product-tracking platform with dashboards, QR scanning, task scheduling and product-risk insights.</p><div class="tags"><span>Web Development</span><span>JavaScript</span><span>Analytics</span></div></article>
+      <article class="project"><h3>Smart Micro HVAC</h3><p>Engineering concept focused on compact, intelligent micro-HVAC design and energy-aware operation.</p><div class="tags"><span>Engineering Design</span><span>Innovation</span></div></article>
+    </div>
+  </section>
+
+  <section class="section reveal" id="identity">
+    <div class="section-head"><h2>04 / Developer ID</h2><span>Academic & technical snapshot</span></div>
+    <img class="art" src="assets/id-dashboard.svg" alt="Developer identity dashboard">
+    <div class="grid" style="margin-top:14px">
+      <div class="info-card"><h3>Highlights</h3><ul><li>Google Cloud Gen AI Exchange Hackathon — 1st Prize, YouthMind</li><li>REFCOLD Global Poster Design Competition — 1st Runner-Up</li><li>PRAVEGA 2026, IISc Bengaluru — Top 10 nationwide</li></ul></div>
+      <div class="info-card"><h3>Professional interests</h3><p>AI/ML development, software engineering, intelligent hardware, connected systems and applied research.</p></div>
+    </div>
+  </section>
+
+  <section class="section reveal" id="connect">
+    <div class="section-head"><h2>05 / Connect</h2><span>Let's build something useful</span></div>
+    <img class="art" src="assets/connect.svg" alt="Connect with Tamanna">
+    <div class="cta">
+      <a class="primary" href="mailto:tamannasatsangi16@gmail.com">Email me</a>
+      <a href="https://www.linkedin.com/in/tamanna-satsangi-150b5b23a/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/TamannaSatsangi16" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+  <footer>Designed with curiosity · Built by Tamanna Satsangi · <a class="toplink" href="https://github.com/TamannaSatsangi16">GitHub profile</a></footer>
+</main>
+<button id="top" aria-label="Back to top">↑</button>
+<script>
+const progress=document.getElementById('progress'), topBtn=document.getElementById('top');
+const navLinks=[...document.querySelectorAll('nav a')];
+const sections=[...document.querySelectorAll('main section[id], #home')];
+function onScroll(){
+  const max=document.documentElement.scrollHeight-innerHeight;
+  progress.style.width=(max>0?scrollY/max*100:0)+'%';
+  topBtn.classList.toggle('show',scrollY>500);
+  let current='home';
+  sections.forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.42) current=s.id||'home';});
+  navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current));
+}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body></html>

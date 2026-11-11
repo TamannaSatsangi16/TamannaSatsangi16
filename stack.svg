@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="560" viewBox="0 0 1200 560" role="img">
+<title>Tamanna Satsangi — GitHub profile</title>
+<desc>Animated dark navy developer profile graphic in electric blue and crimson.</desc>
+<defs>
+ <linearGradient id="bggrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070b16"/><stop offset="1" stop-color="#0c1730"/></linearGradient>
+ <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#247bff"/><stop offset=".52" stop-color="#6f69ff"/><stop offset="1" stop-color="#ff354f"/></linearGradient>
+ <linearGradient id="blueGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#247bff" stop-opacity=".32"/><stop offset="1" stop-color="#247bff" stop-opacity="0"/></linearGradient>
+ <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#7894c6" opacity=".16"/></pattern>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="12"/></filter>
+ 
+</defs>
+<style>
+  .bg{fill:#070b16}.panel{fill:#101a2c;stroke:#223653;stroke-width:1.5}
+  .muted{fill:#9aa9c2}.white{fill:#f4f7ff}.blue{fill:#247bff}.red{fill:#ff354f}
+  .mono{font-family:Consolas,Monaco,monospace;letter-spacing:1.5px}
+  .sans{font-family:Arial,Helvetica,sans-serif}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:2.5px}
+  .small{font-size:14px}.body{font-size:17px}.label{font-size:12px;letter-spacing:1.6px}
+  .cardtitle{font-size:19px;font-weight:700}.hairline{stroke:#263a59;stroke-width:1}
+</style>
+<rect width="1200" height="560" rx="22" fill="url(#bggrad)"/>
+<rect width="1200" height="560" rx="22" fill="url(#dots)"/>
+<rect x="0" y="0" width="1200" height="5" fill="url(#edge)"/>
+
+<text x="48" y="52" class="mono blue eyebrow">02 / TECHNOLOGY STACK</text>
+<text x="48" y="101" class="sans white" font-size="35" font-weight="800">Tools I use to bring ideas to life.</text>
+<text x="48" y="132" class="sans muted" font-size="16">A mix of programming, intelligent systems, web technologies and hardware.</text>
+<g transform="translate(600 300)">
+ <ellipse rx="430" ry="155" transform="rotate(-15)" fill="none" stroke="#247bff" stroke-opacity=".42" stroke-width="2" stroke-dasharray="9 8"/>
+ <ellipse rx="350" ry="115" transform="rotate(22)" fill="none" stroke="#ff354f" stroke-opacity=".38" stroke-width="2" stroke-dasharray="7 9"/>
+ <ellipse rx="260" ry="78" transform="rotate(-28)" fill="none" stroke="#627da9" stroke-opacity=".55" stroke-width="2"/>
+ <circle r="82" fill="#14233b" stroke="url(#edge)" stroke-width="2"/>
+ <text x="0" y="-7" text-anchor="middle" class="mono blue" font-size="13">BUILD</text>
+ <text x="0" y="19" text-anchor="middle" class="sans white" font-size="20" font-weight="800">&amp; LEARN</text>
+ <g class="sans" font-weight="700">
+  <g transform="translate(-420 -76)"><rect width="112" height="38" rx="12" fill="#122847" stroke="#247bff"/><text x="56" y="25" text-anchor="middle" fill="#eaf1ff" font-size="16">Python</text></g>
+  <g transform="translate(-270 -153)"><rect width="94" height="38" rx="12" fill="#122847" stroke="#247bff"/><text x="47" y="25" text-anchor="middle" fill="#eaf1ff" font-size="16">Java</text></g>
+  <g transform="translate(-30 -151)"><rect width="70" height="38" rx="12" fill="#122847" stroke="#247bff"/><text x="35" y="25" text-anchor="middle" fill="#eaf1ff" font-size="16">C</text></g>
+  <g transform="translate(200 -153)"><rect width="124" height="38" rx="12" fill="#122847" stroke="#ff354f"/><text x="62" y="25" text-anchor="middle" fill="#eaf1ff" font-size="16">Flask</text></g>
+  <g transform="translate(360 -58)"><rect width="126" height="38" rx="12" fill="#122847" stroke="#ff354f"/><text x="63" y="25" text-anchor="middle" fill="#eaf1ff" font-size="16">JavaScript</text></g>
+  <g transform="translate(-390 82)"><rect width="128" height="38" rx="12" fill="#122847" stroke="#ff354f"/><text x="64" y="25" text-anchor="middle" fill="#eaf1ff" font-size="16">Machine Learning</text></g>
+  <g transform="translate(-200 133)"><rect width="126" height="38" rx="12" fill="#122847" stroke="#247bff"/><text x="63" y="25" text-anchor="middle" fill="#eaf1ff" font-size="16">Deep Learning</text></g>
+  <g transform="translate(40 145)"><rect width="128" height="38" rx="12" fill="#122847" stroke="#247bff"/><text x="64" y="25" text-anchor="middle" fill="#eaf1ff" font-size="16">Generative AI</text></g>
+  <g transform="translate(260 86)"><rect width="124" height="38" rx="12" fill="#122847" stroke="#ff354f"/><text x="62" y="25" text-anchor="middle" fill="#eaf1ff" font-size="16">Google Cloud</text></g>
+ </g>
+</g>
+<g transform="translate(48 497)">
+ <text x="0" y="0" class="mono muted" font-size="11">ALSO WORKING WITH</text>
+ <g transform="translate(160 -22)" class="sans" font-size="13" font-weight="700">
+  <rect width="105" height="30" rx="9" fill="#17243a"/><text x="52" y="20" text-anchor="middle" class="white">HTML / CSS</text>
+  <rect x="116" width="122" height="30" rx="9" fill="#17243a"/><text x="177" y="20" text-anchor="middle" class="white">REST APIs</text>
+  <rect x="249" width="74" height="30" rx="9" fill="#17243a"/><text x="286" y="20" text-anchor="middle" class="white">IoT</text>
+  <rect x="334" width="174" height="30" rx="9" fill="#17243a"/><text x="421" y="20" text-anchor="middle" class="white">Embedded Systems</text>
+  <rect x="519" width="110" height="30" rx="9" fill="#17243a"/><text x="574" y="20" text-anchor="middle" class="white">Robotics</text>
+  <rect x="640" width="212" height="30" rx="9" fill="#17243a"/><text x="746" y="20" text-anchor="middle" class="white">Data Structures &amp; Algorithms</text>
+ </g>
+</g>
+</svg>

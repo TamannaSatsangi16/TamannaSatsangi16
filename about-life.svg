@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="500" viewBox="0 0 1200 500" role="img">
+<title>Tamanna Satsangi — GitHub profile</title>
+<desc>Animated dark navy developer profile graphic in electric blue and crimson.</desc>
+<defs>
+ <linearGradient id="bggrad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070b16"/><stop offset="1" stop-color="#0c1730"/></linearGradient>
+ <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#247bff"/><stop offset=".52" stop-color="#6f69ff"/><stop offset="1" stop-color="#ff354f"/></linearGradient>
+ <linearGradient id="blueGlow" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#247bff" stop-opacity=".32"/><stop offset="1" stop-color="#247bff" stop-opacity="0"/></linearGradient>
+ <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#7894c6" opacity=".16"/></pattern>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="12"/></filter>
+ 
+</defs>
+<style>
+  .bg{fill:#070b16}.panel{fill:#101a2c;stroke:#223653;stroke-width:1.5}
+  .muted{fill:#9aa9c2}.white{fill:#f4f7ff}.blue{fill:#247bff}.red{fill:#ff354f}
+  .mono{font-family:Consolas,Monaco,monospace;letter-spacing:1.5px}
+  .sans{font-family:Arial,Helvetica,sans-serif}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:2.5px}
+  .small{font-size:14px}.body{font-size:17px}.label{font-size:12px;letter-spacing:1.6px}
+  .cardtitle{font-size:19px;font-weight:700}.hairline{stroke:#263a59;stroke-width:1}
+</style>
+<rect width="1200" height="500" rx="22" fill="url(#bggrad)"/>
+<rect width="1200" height="500" rx="22" fill="url(#dots)"/>
+<rect x="0" y="0" width="1200" height="5" fill="url(#edge)"/>
+
+<text x="48" y="52" class="mono blue eyebrow">01 / ABOUT &amp; FOCUS</text>
+<text x="48" y="101" class="sans white" font-size="35" font-weight="800">Curious by design. Practical by nature.</text>
+<text x="48" y="132" class="sans muted" font-size="16">I enjoy turning ideas into useful systems — from intelligent software to connected hardware.</text>
+<g transform="translate(48 176)">
+ <rect width="520" height="260" rx="20" class="panel"/>
+ <text x="26" y="40" class="mono blue" font-size="12">CAPABILITIES</text>
+ <g class="sans">
+  <circle cx="31" cy="80" r="5" fill="#247bff"/><text x="50" y="86" class="white" font-size="17" font-weight="700">AI, Machine Learning &amp; Deep Learning</text>
+  <circle cx="31" cy="126" r="5" fill="#ff354f"/><text x="50" y="132" class="white" font-size="17" font-weight="700">Web apps, APIs &amp; workflow tools</text>
+  <circle cx="31" cy="172" r="5" fill="#247bff"/><text x="50" y="178" class="white" font-size="17" font-weight="700">IoT, embedded systems &amp; robotics</text>
+  <circle cx="31" cy="218" r="5" fill="#ff354f"/><text x="50" y="224" class="white" font-size="17" font-weight="700">Problem-solving &amp; engineering design</text>
+ </g>
+</g>
+<g transform="translate(600 176)">
+ <rect width="552" height="260" rx="20" class="panel"/>
+ <text x="28" y="40" class="mono red" font-size="12">WHAT I LOVE EXPLORING</text>
+ <g opacity="1"><rect x="28" y="62" width="496" height="143" rx="14" fill="#14233b"/>
+  <text x="54" y="104" class="sans blue" font-size="13" font-weight="700">01 / INTELLIGENT SYSTEMS</text>
+  <text x="54" y="140" class="sans white" font-size="22" font-weight="700">AI for real-world challenges</text>
+  <text x="54" y="170" class="sans muted" font-size="15">From road safety to smarter supply chains.</text>
+  <animate attributeName="opacity" values="1;0;0;1" keyTimes="0;.3;.66;1" dur="12s" repeatCount="indefinite"/>
+ </g>
+ <g opacity="0"><rect x="28" y="62" width="496" height="143" rx="14" fill="#14233b"/>
+  <text x="54" y="104" class="sans blue" font-size="13" font-weight="700">02 / CONNECTED HARDWARE</text>
+  <text x="54" y="140" class="sans white" font-size="22" font-weight="700">Robotics &amp; embedded systems</text>
+  <text x="54" y="170" class="sans muted" font-size="15">Bringing code into the physical world.</text>
+  <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;.3;.63;1" dur="12s" repeatCount="indefinite"/>
+ </g>
+ <g opacity="0"><rect x="28" y="62" width="496" height="143" rx="14" fill="#14233b"/>
+  <text x="54" y="104" class="sans blue" font-size="13" font-weight="700">03 / COLLABORATION</text>
+  <text x="54" y="140" class="sans white" font-size="22" font-weight="700">Learning, building &amp; competing</text>
+  <text x="54" y="170" class="sans muted" font-size="15">Hackathons, innovation &amp; campus activities.</text>
+  <animate attributeName="opacity" values="0;0;1;0" keyTimes="0;.32;.66;1" dur="12s" repeatCount="indefinite"/>
+ </g>
+ <g transform="translate(28 230)">
+  <rect width="496" height="4" rx="2" fill="#273b5a"/>
+  <rect width="165" height="4" rx="2" fill="#247bff"><animate attributeName="width" values="0;165;330;496;0" dur="12s" repeatCount="indefinite"/></rect>
+  <circle cx="0" cy="2" r="4" fill="#247bff"/><circle cx="248" cy="2" r="4" fill="#ff354f"/><circle cx="496" cy="2" r="4" fill="#247bff"/>
+ </g>
+</g>
+<text x="48" y="472" class="mono muted" font-size="11">LEARN CONSTANTLY <tspan fill="#247bff">/</tspan> BUILD THOUGHTFULLY <tspan fill="#ff354f">/</tspan> MAKE AN IMPACT</text>
+</svg>

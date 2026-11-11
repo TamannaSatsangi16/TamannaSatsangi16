@@ -13,7 +13,7 @@
 ![Connect](./assets/connect.svg?v=1)
 
 **Connect:** [GitHub](https://github.com/TamannaSatsangi16) · [LinkedIn](https://www.linkedin.com/in/tamanna-satsangi-150b5b23a/) · [Email](mailto:tamannasatsangi16@gmail.com)
-
+🌐 [View My Interactive Portfolio](https://tamannasatsangi16.github.io/TamannaSatsangi16/)
 </div>
 
 ---
